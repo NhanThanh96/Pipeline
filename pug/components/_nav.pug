@@ -1,3 +1,10 @@
+.sidebar-mobile
+  .logo.logo--mobile
+    a.logo__link
+      img.logo__img(src="./images/logo.svg", alt="Pipeline")
+  button.sidebar__toggle-button
+    span
+      i.fas.fa-bars
 .sidebar
   .logo
     a.logo__link
@@ -66,10 +73,10 @@
           i.search__icon.fas.fa-search
         input.search__input(type="text" placeholder="Search")
     .add-new
-      button.add-new__btn Add new
+      button.add-new__btn.js-add-new__btn Add new
       -
         var addNewList = ["Team", "Project", "Task"]
-      ul.dropdown
+      ul.dropdown.js-add-new__dropdown
         each val, index in addNewList
           li.dropdown__item
             a.dropdown__link(href="#")= val

@@ -12,17 +12,17 @@
         p.management-template__paragraph Pipeline is a collection of modular components and layouts for building project management and collaboration web apps.
         .dropdown-group
           .dropdown
-            a.dropdown__selection(href="#") Explore Pages
-            .dropdown__list
+            a.dropdown__selection.js-dropdown__explore-page(href="#") Explore Pages
+            .dropdown__list.js-pages-list
               a.dropdown__link App Pages
               a.dropdown__link Utility Pages
           .dropdown
-            a.dropdown__selection(href="#") View Components
-            .dropdown__list
+            a.dropdown__selection.js-dropdown__view-component(href="#") View Components
+            .dropdown__list.js-component-list
               a.dropdown__link Bootstrap Components
               a.dropdown__link Pipeline Components
       section.management-pages
-        .carousel
+        .carousel.js-management-page-carousel
           -
             var managementPagesCarousel = [
               {
@@ -47,7 +47,7 @@
               }
             ]
           each item in managementPagesCarousel
-            .carousel__item  
+            .carousel__item.js-page-carousel-item
               a.carousel__link(href= item.url)
                 img.carousel__img(
                   src= item.img
@@ -60,8 +60,8 @@
           a.management-pages__link(href="#") App Pages
           a.management-pages__link(href="#") Utility Pages
       section.modular-components
-        .row
-          .carousel.modular-components__carousel.col-6
+        .row.carousel-group
+          .carousel.modular-components__carousel.js-components__carousel--left.col-6
             -
               var modularComponentLeftCarousel = [
                 {
@@ -78,9 +78,9 @@
                 },
               ]
             each item in modularComponentLeftCarousel
-              .carousel__item
-                img(src= item.img)
-          .carousel.modular-components__carousel.col-6
+              .carousel__item.js-components__carousel-item--left
+                img.carousel__img(src= item.img)
+          .carousel.modular-components__carousel.js-components__carousel--right.col-6
             -
               var modularComponentLeftCarousel = [
                 {
@@ -97,8 +97,8 @@
                 },
               ]
             each item in modularComponentLeftCarousel
-              .carousel__item
-                img(src= item.img)
+              .carousel__item.js-components__carousel-item--right
+                img.carousel__img(src= item.img)
         .d-flex
           i.modular-components__icon.fas.fa-user-circle
           h3.modular-components__heading Modular Components
