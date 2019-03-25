@@ -2,9 +2,11 @@
   .logo.logo--mobile
     a.logo__link
       img.logo__img(src="./images/logo.svg", alt="Pipeline")
-  button.sidebar__toggle-button
-    span
-      i.fas.fa-bars
+  .sidebar-collapse
+    button.sidebar__toggle-button.js-sidebar__toggle-button
+      span
+        i.fas.fa-bars
+    +profile()
 .sidebar
   .logo
     a.logo__link

@@ -16,9 +16,5 @@
   "bugs": {
     "url": "https://github.com/NhanThanh96/Pipeline/issues"
   },
-  "homepage": "https://github.com/NhanThanh96/Pipeline#readme",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+  "homepage": "https://github.com/NhanThanh96/Pipeline#readme"
 }

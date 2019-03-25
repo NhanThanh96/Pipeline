@@ -78,4 +78,25 @@ $(document).ready(function(){
           .appendTo('.js-components__carousel--right');
       }, 4000);
 
+    // button toggle
+    // resize event
+    function resizeHandler() {
+      var win = $(this); 
+          if (win.width() < 769) {
+              $('.overlay').on('click', function(){        
+                  $(".overlay").addClass("hide");
+                  $(".sidebar").addClass("collapse");
+              });
+          } else{
+              $(window).unbind('scroll');
+          }
+      }
+    resizeHandler();
+
+    $(window).resize(resizeHandler);
+
+    $(".js-sidebar__toggle-button").on("click", function(){
+      $(".sidebar").toggleClass("collapse");
+      $(".overlay").toggleClass("hide");
+    });
 });

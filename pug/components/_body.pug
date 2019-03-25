@@ -1,4 +1,5 @@
-.d-flex
+.d-flex.d-sm-block
+  .overlay
   //- sidebar
   include ../components/_nav.pug
   //- main content
@@ -52,7 +53,7 @@
                 img.carousel__img(
                   src= item.img
                   )
-        .d-flex
+        .management-pages__title
           i.management-pages__icon.fas.fa-user-circle
           h3.management-pages__heading Project Management Pages
         p.management-pages__paragraph Pipeline makes building project management interfaces simple with pages for teams, projects, tasks, kanban boards and more.
@@ -99,7 +100,7 @@
             each item in modularComponentLeftCarousel
               .carousel__item.js-components__carousel-item--right
                 img.carousel__img(src= item.img)
-        .d-flex
+        .modular-components__title
           i.modular-components__icon.fas.fa-user-circle
           h3.modular-components__heading Modular Components
         p.modular-components__paragraph Build feature-rich pages with everything Bootstrap 4.1.3 has to offer and extend functionality with Pipeline's suite of stylish custom components.
@@ -129,7 +130,7 @@
                 src= item.img,
                 alt= item.alt
                 )
-        .d-flex
+        .flexible-layouts__title
           i.flexible-layouts__icon.fas.fa-user-circle
           h3.flexible-layouts__heading Flexible Layouts
         p.flexible-layouts__paragraph Pipeline offers three distinct layouts to suit a variety of content types. Layouts are fully responsive and scale elegantally for different devices and screen sizes.
@@ -162,7 +163,7 @@
                   src= item.img,
                   alt= item.alt
                   )
-          .d-flex
+          .famililar-tooling__title
             i.famililar-tooling__icon.fas.fa-user-circle
             h3.famililar-tooling__heading Familiar Tooling
           p.famililar-tooling__paragraph Pipeline employs industry-standard development tools with an intuitive workflow designed to get you up and runnning faster.
